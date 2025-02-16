@@ -1,4 +1,4 @@
-/* === GENERAL STYLES === */
+/* === ESILIZAÇÃO GERAL === */
 * {
     margin: 0;
     padding: 0;
@@ -120,7 +120,7 @@ section header h1 {
     background-color: #00b491;
 }
 
-/* === NAVIGATION === */
+/* === NAV === */
 nav {
     display: flex;
     height: var(--nav-height);
@@ -251,7 +251,7 @@ nav .menu ul li a {
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
 }
 
-/* === ABOUT === */
+/* === ABOUT SESSION === */
 #about .wrapper {
     display: flex;
     align-items: center;
@@ -312,7 +312,7 @@ nav .menu ul li a {
     font-size: clamp(1.4rem, 1.5vw, 1.6rem);
 }
 
-/* === PROJECTS === */
+/* === PROJETOS === */
 #projects .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -426,7 +426,7 @@ nav .menu ul li a {
     margin-bottom: 1.6rem;
 }
 
-/* === CONTACT === */
+/* === CONTATO === */
 #contact .content {
     display: flex;
     flex-direction: column;
@@ -435,7 +435,7 @@ nav .menu ul li a {
     margin-top: 4rem;
 }
 
-/* === BACK TO TOP BUTTON === */
+/* === VOLTAR PARA O COMEÇO === */
 #backToTopButton {
     position: fixed;
     bottom: 2rem;
@@ -461,7 +461,7 @@ nav .menu ul li a {
     transform: translateY(0);
 }
 
-/* === RESPONSIVE DESIGN === */
+/* === DESIGN RESPONSIVO === */
 @media (max-width: 1024px) {
     nav .menu ul {
         display: none;

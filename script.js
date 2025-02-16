@@ -1,4 +1,4 @@
-// Theme toggle functionality
+// Theme toggle função
 const toggle = document.querySelector("#sw-checkbox");
 const languageToggle = document.querySelector("#languageToggle");
 const navigation = document.querySelector("#navigation");
@@ -6,7 +6,7 @@ const backToTopButton = document.querySelector("#backToTopButton");
 const menuButton = document.querySelector(".menu-button");
 const menu = document.querySelector(".menu");
 
-// Theme toggle
+// Tema toggle
 toggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     toggle.nextElementSibling.querySelector('i').className = 
@@ -18,21 +18,21 @@ menuButton.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking outside
+// fechar mobile por fora
 document.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && !menuButton.contains(e.target)) {
         menu.classList.remove('active');
     }
 });
 
-// Close mobile menu when clicking a link
+// fechar mobile por link
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', () => {
         menu.classList.remove('active');
     });
 });
 
-// Scroll functionality
+// Função Scroll
 function onScroll() {
     if (scrollY > 0) {
         navigation.classList.add('scroll');
@@ -49,7 +49,7 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll);
 
-// Initialize ScrollReveal with responsive distances
+// scroll no responsivo
 ScrollReveal({
     origin: 'bottom',
     distance: window.innerWidth > 768 ? '50px' : '30px',
