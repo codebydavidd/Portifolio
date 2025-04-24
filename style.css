@@ -5,8 +5,17 @@
     box-sizing: border-box;
 }
 
+#particles-js {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+
 :root {
-    --primary-color: #dd0000;
+    --primary-color: #00d312;
     --headline: #212529;
     --paragraph: #495057;
     --brand-beige: #fffaf1;
@@ -263,9 +272,12 @@ nav .menu ul li a {
     text-align: left;
 }
 
-#about .col-b {
+
+#about .col-c {
     flex: 1;
-    max-width: 50rem;
+    max-width: 40rem;
+
+
 }
 
 #about .content p {
